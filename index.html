@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MASTER SHIELD ICON VPN</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+/* ===== BODY BACKGROUND ===== */
+body {
+    background: radial-gradient(circle at top, #050B1F, #000);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Cyber particles */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("https://i.imgur.com/8wG5vY7.png");
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #00C6FF, #7F00FF, #FF00CC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo svg {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    background: linear-gradient(45deg, #00C6FF, #7F00FF, #FF00CC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* ===== GRADIENT BUTTON WITH ROTATING BORDER ===== */
+.btn-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 4px;
+    border-radius: 50px;
+}
+
+.btn-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: conic-gradient(#00C6FF, #7F00FF, #FF00CC, #00C6FF);
+    animation: spin 3s linear infinite;
+    z-index: -1;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.hero button {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #111;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="logo">
+
+<!-- Shield + Key SVG Logo -->
+<svg viewBox="0 0 64 64" fill="none">
+<path d="M32 2L8 12v20c0 14 24 30 24 30s24-16 24-30V12L32 2z" stroke="cyan" stroke-width="2"/>
+<circle cx="32" cy="30" r="6" stroke="magenta" stroke-width="2"/>
+<line x1="32" y1="36" x2="32" y2="50" stroke="magenta" stroke-width="2"/>
+</svg>
+
+MASTER SHIELD ICON VPN
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<h1>MASTER SHIELD ICON VPN</h1>
+<p>Your Privacy. Our Shield. Secure, Fast, Unlimited.</p>
+
+<div class="btn-wrapper">
+<button>Get Secure Now</button>
+</div>
+
+</section>
+
+<footer>
+© 2026 MASTER SHIELD ICON VPN GROUP | All Rights Reserved
+</footer>
+
+</body>
+</html>
