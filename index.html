@@ -1,39 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MASTER SHIELD ICON VPN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTER SHIELD ICON VPN</title>
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
-<style>
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Orbitron", sans-serif;
+        }
 
-/* ===== RESET ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Orbitron", sans-serif;
-}
+        /* ===== BODY BACKGROUND ===== */
+        body {
+            background: radial-gradient(circle at top, #050B1F, #000);
+            color: white;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-/* ===== BODY BACKGROUND ===== */
-body {
-    background: radial-gradient(circle at top, #050B1F, #000);
-    color: white;
-    overflow-x: hidden;
-}
+        /* Cyber particles */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: url("https://i.imgur.com/8wG5vY7.png");
+            opacity: 0.15;
+            z-index: -1;
+        }
 
-/* Cyber particles */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: url("https://i.imgur.com/8wG5vY7.png");
-    opacity: 0.15;
-    z-index: -1;
-}
+        /* ===== SHIELD IMAGE STYLING ===== */
+        .shield-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .kadi-image {
+            width: 280px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 15px;
+            
+            /* Cyan/Blue Neon Glow */
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.4), 
+                        0 0 30px rgba(0, 210, 255, 0.2);
+            
+            /* Optional: subtle pulse animation */
+            animation: pulse 3s infinite ease-in-out;
+            transition: transform 0.3s ease;
+        }
+
+        .kadi-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.7);
+        }
+
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 0 0 10px #00d2ff;
+            font-size: 1.5rem;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="shield-container">
+        <img src="images/kadi.jpg" alt="Master Shield VPN Icon" class="kadi-image">
+        <h1>Master Shield VPN</h1>
+    </div>
+
+</body>
+</html>
 
 /* ===== HEADER ===== */
 header {
